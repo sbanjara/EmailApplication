@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <title>Sign Up Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="scripts/Project1.js"></script>
+        
+        <link type="text/css" href="CSSFILE.css" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+        
+        <section id="body">
+        
+            <form name="registrationform" id="registrationform" action="#">
+                
+                <h1>Sign Up Form</h1>
+
+                <p>
+                    <label for="input" class="input">Name:</label>
+                    
+                </p>
+                
+                <p>
+                    <input type="text" name="name" class="namefields" id="name">
+                </p>
+               
+
+                <p>
+                    <label for="input" class="input">How your name will be displayed?</label>
+                </p>
+                
+                <p>
+                    <input type="text" name="displayname" id="displayname">
+                </p>
+
+                <p>
+                    <label for="input" class="input">Email:</label>
+                </p>
+                
+                <p>
+                    <input type="text" name="email" id="email">
+                </p>
+
+                <p>
+
+                    <label for="input">Select Session:</label>
+
+                    <select name="session" id="session">
+
+                        <option value="1">Session 1</option>
+                        <option value="2">Session 2</option>
+                        <option value="3">Session 3</option>
+                        <option value="4">Session 4</option>
+
+                    </select>
+
+                </p>
+
+                <p>
+                   Comment:
+                </p>
+                
+                <p>
+                    <textarea rows="1" cols="50" name="comment" id="comment" class="input"></textarea>
+                </p>
+
+                <p>
+                    <input type="button" value="Submit" id="submit-button" onclick="Project1.registration();">
+                </p>
+
+            </form>
+
+            <div id="output">
+
+                <p id="version"></p>
+
+            </div>
+        
+        </section>
+        
+        <script type="text/javascript">
+
+            $(document).ready( Project1.init );
+            
+            $('.namefields').change(function(){
+                
+                var name = $('#name').val();
+                $('#displayname').val(name);
+                
+            });
+
+        </script>
+        
+    </body>
+    
+</html>

@@ -1,0 +1,87 @@
+
+h1 {
+    color: #1F2667;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: solid;
+    border-bottom-color: #BC0000;
+    border-bottom-width: 1px;
+}
+
+body {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    background-color: #F5F6F7;
+    color: #1F2667;
+}
+
+#registrationform {
+    
+    padding: 10px 20px 20px 20px;
+    color: #1F2667;
+    font-size: 18px;
+    background-color: white;
+    
+}
+
+input {
+    
+    color: #1F2667;
+    height: 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid;
+    padding-left: 10px;
+    border-bottom-width: 1px;
+    border-bottom-color: #BC0000;
+    
+}
+
+#comment {
+    
+    color: #1F2667;
+    height: 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid;
+    border-bottom-color: #BC0000;
+    padding-left: 10px;
+    border-bottom-width: 1px;
+    
+}
+
+#session {
+    
+    height: 30px;
+    color: #1F2667;
+    
+}
+
+#submit-button {
+    
+    background-color: #1F2667;
+    border: none;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+        
+}
+
+#output {
+    
+    padding-top: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    
+}
