@@ -20,7 +20,7 @@ public class SendEmail {
         
         Properties properties = System.getProperties();  
         
-        String from = "sbanjara.info@gmail.com";  
+        String from = "youremail@gmail.com";  
 
         // Setup mail server 
         properties.setProperty("mail.smtp.host", "smtp.gmail.com"); 
@@ -40,7 +40,7 @@ public class SendEmail {
         Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() { 
-                return new PasswordAuthentication("sbanjara.info@gmail", "MailBanjaraAccount56()"); 
+                return new PasswordAuthentication("youremail@gmail.com", "yourpassword"); 
             } 
             
         }); 
@@ -66,7 +66,7 @@ public class SendEmail {
                             + "\nSession: " + userSession
                             + "\nComment: " + comment
                             + "\n\nHave a good one!!\n\nSincerely,\nBanjara Inc.\n700 Pelham Rd N\nPhone: 256-192-9898"
-                            + "\nEmail: sbanjara.info@gmail.com";
+                            + "\nEmail: youremail@gmail.com";
      
             message.setText(emailMessage); 
 

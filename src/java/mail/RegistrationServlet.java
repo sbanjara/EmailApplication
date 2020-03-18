@@ -3,15 +3,16 @@ package mail;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.SQLException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
 @WebServlet(name = "RegistrationServlet", urlPatterns = {"/registration"})
 public class RegistrationServlet extends HttpServlet {
+    
     
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -36,7 +37,7 @@ public class RegistrationServlet extends HttpServlet {
         String comment = request.getParameter("comment");
         
         if(e.isEmpty() || session.isEmpty() || name.isEmpty() || displayname.isEmpty()) {
-            
+            //Do Nothing
         }
         else {
             email.sendEmail(e, name, displayname, session, comment);
